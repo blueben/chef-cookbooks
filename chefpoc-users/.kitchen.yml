@@ -1,17 +1,18 @@
 ---
 driver:
   name: vagrant
+  provider: parallels
 
 provisioner:
   name: chef_zero
 
+verifier:
+  name: inspec
+  format: documentation
+
 platforms:
-  - name: ubuntu-14.04
-    driver:
-      provider: parallels
   - name: centos-7.1
-    driver:
-      provider: parallels
+  - name: ubuntu-14.04
 
 suites:
   - name: default
