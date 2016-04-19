@@ -1,0 +1,7 @@
+name 'chefpoc-users'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures chefpoc-users'
+long_description 'Installs/Configures chefpoc-users'
+version '0.1.0'
