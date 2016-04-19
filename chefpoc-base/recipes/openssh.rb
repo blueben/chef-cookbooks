@@ -1,7 +1,7 @@
 #
 # Cookbook Name:: chefpoc-base
-# Recipe:: ntp
+# Recipe:: openssh
 #
 # Copyright (c) 2016 Slalom Consulting, All Rights Reserved.
 
-include_recipe 'ntp'
+include_recipe 'openssh'
