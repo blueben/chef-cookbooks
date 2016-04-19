@@ -1,7 +1,15 @@
 name 'chefpoc-base'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Benjamin Krueger'
+maintainer_email 'benjamink@slalom.com'
 license 'all_rights'
 description 'Installs/Configures chefpoc-base'
 long_description 'Installs/Configures chefpoc-base'
 version '0.1.0'
+
+depends "openssh"
+depends "ntp"
+depends "chef-client"
+depends "postfix"
+depends "cron"
+depends "rsyslog"
+depends "firewall"
