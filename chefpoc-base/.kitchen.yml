@@ -1,27 +1,51 @@
 ---
 driver:
   name: vagrant
-
-## The forwarded_port port feature lets you connect to ports on the VM guest via
-## localhost on the host.
-## see also: https://docs.vagrantup.com/v2/networking/forwarded_ports.html
-
-#  network:
-#    - ["forwarded_port", {guest: 80, host: 8080}]
+  provider: parallels
 
 provisioner:
-  name: policyfile_zero
+  name: chef_zero
 
-## require_chef_omnibus specifies a specific chef version to install. You can
-## also set this to `true` to always use the latest version.
-## see also: https://docs.chef.io/config_yml_kitchen.html
-
-#  require_chef_omnibus: 12.5.0
+verifier:
+  name: inspec
+  format: documentation
 
 platforms:
-  - name: ubuntu-14.04
   - name: centos-7.1
+  - name: ubuntu-14.04
 
 suites:
   - name: default
+    run_list:
+      - recipe[chefpoc-base::default]
     attributes:
+  - name: chef-client
+    run_list:
+      - recipe[chefpoc-base::chef-client]
+  - name: cron
+    run_list:
+      - recipe[chefpoc-base::cron]
+  - name: firewall
+    run_list:
+      - recipe[chefpoc-base::firewall]
+  - name: ntp
+    run_list:
+      - recipe[chefpoc-base::ntp]
+  - name: openssh
+    run_list:
+      - recipe[chefpoc-base::openssh]
+  - name: packages
+    run_list:
+      - recipe[chefpoc-base::packages]
+  - name: postfix
+    run_list:
+      - recipe[chefpoc-base::postfix]
+  - name: rsyslog
+    run_list:
+      - recipe[chefpoc-base::rsyslog]
+  - name: selinux
+    run_list:
+      - recipe[chefpoc-base::selinux]
+  - name: sysctl
+    run_list:
+      - recipe[chefpoc-base::sysctl]
