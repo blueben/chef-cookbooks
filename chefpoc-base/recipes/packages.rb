@@ -5,7 +5,5 @@
 # Copyright (c) 2016 Slalom Consulting, All Rights Reserved.
 
 node.base.packages.each do |pkg, flag|
-  if flag
-    package pkg
-  end
+  package pkg if flag
 end

@@ -1,1 +1,1 @@
-default.base.packages = {'git' => true}
+default.base.packages = { 'git' => true }

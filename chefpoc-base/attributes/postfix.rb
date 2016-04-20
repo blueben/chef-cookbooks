@@ -1,1 +1,1 @@
-default.postfix.mail_type = "client"
+default.postfix.mail_type = 'client'

@@ -1,1 +1,1 @@
-default.selinux.state = "permissive"
+default.selinux.state = 'permissive'

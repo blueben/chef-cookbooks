@@ -6,4 +6,4 @@ description 'Installs/Configures chefpoc-users'
 long_description 'Installs/Configures chefpoc-users'
 version '0.1.0'
 
-depends "user"
+depends 'user'
