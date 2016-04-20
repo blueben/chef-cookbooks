@@ -6,12 +6,12 @@ description 'Installs/Configures chefpoc-base'
 long_description 'Installs/Configures chefpoc-base'
 version '0.1.0'
 
-depends "openssh"
-depends "ntp"
-depends "chef-client"
-depends "postfix"
-depends "cron"
-depends "rsyslog"
-depends "firewall"
-depends "sysctl"
-depends "selinux"
+depends 'openssh'
+depends 'ntp'
+depends 'chef-client'
+depends 'postfix'
+depends 'cron'
+depends 'rsyslog'
+depends 'firewall'
+depends 'sysctl'
+depends 'selinux'
