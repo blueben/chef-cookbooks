@@ -1,1 +1,1 @@
-default.packages = %w(vim git)
+default.base.packages = {'git' => true}
