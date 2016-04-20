@@ -1,4 +1,3 @@
-default.openssh.server.permit_root_login = 'yes'
-default.openssh.server.password_authentication = 'yes'
-default.openssh.server.allow_groups = 'sudo'
+default.openssh.server.permit_root_login = 'no'
+default.openssh.server.password_authentication = 'no'
 default.openssh.server.print_motd = 'no'
