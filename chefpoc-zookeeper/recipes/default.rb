@@ -6,4 +6,4 @@
 
 include_recipe 'chefpoc-zookeeper::install'
 include_recipe 'chefpoc-zookeeper::config_render'
-#include_recipe 'chefpoc-zookeeper::service'
+include_recipe 'chefpoc-zookeeper::service'
