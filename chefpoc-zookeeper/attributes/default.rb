@@ -17,7 +17,7 @@ default.zookeeper.service_style   = 'sysv'
 # Java options
 
 default.zookeeper.use_java_cookbook = true
-default.zookeeper.java_opts         = '-Xms128M -Xmx512M'
+default.zookeeper.java_opts         = '-Xms128M -Xmx512M -preferIPv4Stack=true'
 default.zookeeper.jmx_port          = '7199'
 default.zookeeper.jmx_local         = 'local'
 
