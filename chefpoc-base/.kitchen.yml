@@ -13,6 +13,7 @@ verifier:
 platforms:
   - name: centos-7.1
   - name: ubuntu-14.04
+  - name: debian-7.11
 
 suites:
   - name: default

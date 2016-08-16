@@ -1,0 +1,7 @@
+name 'default_nginx'
+maintainer 'Slalom'
+maintainer_email 'benjamink@slalom.com'
+license 'all_rights'
+description 'Installs/Configures default_nginx'
+long_description 'Installs/Configures default_nginx'
+version '0.1.0'
